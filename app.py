@@ -8,9 +8,9 @@ startTime = datetime.now()
 filename = "titanic_model.pkl"
 model = pickle.load(open(filename, 'rb'))
 
-sex_d = {0: "Kobieta", 1: "Mężczyzna"}
-pclass_d = {0: "Pierwsza", 1: "Druga", 2: "Trzecia"}
-embarked_d = {0: "Cherbourg", 1: "Queenstown", 2: "Southampton"}
+sex_d = {"female": "Kobieta", "male": "Mężczyzna"}
+pclass_d = {1: "Pierwsza", 2: "Druga", 3: "Trzecia"}
+embarked_d = {"C": "Cherbourg", "Q": "Queenstown", "S": "Southampton"}
 
 
 def main():
